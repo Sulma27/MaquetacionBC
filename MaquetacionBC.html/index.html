@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia Capel's</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="container">
+        <div class="logo">
+            <h1>Barberia Capel's</h1>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Seccion de bienvenida-->
+    <section id="inicio">
+        ><div class="banner">
+            <h2>Tu Estilo, Nuestro Compromiso</h2>
+            <p>Ofrecemos los mejores servicios de cuidado personal para que siempre luzcas impecable.</p>
+            <a href="#reservas" class="btn-reservar">Reserva tu cita</a>
+        </div>
+    </section>
+
+    <!--Seccion de Servicios-->
+    <section class="servicios">
+        <div class="contenedor">
+            <h2>Nuestros servicios</h2>
+            <div class="servicio-item">
+                 <img src="imagenes.jpg/corte-cabello.png" alt="Corte de cabello">
+                 <h3>Corte de cabello</h3>
+                    <p>Ofrecemos cortes de cabello clasicos y modernos que se adapten a tu estilo</p>
+            </div>
+            <div class="servicio-item">
+                <img src="imagenes.jpg/arreglo-barba.png" alt="Arreglo de Barba">
+                 <h3>Arreglo de Barba</h3>
+                    <p>Cuida tu barba con nuestros servicios de arreglo y mantenimiento de alta calida</p>
+            </div>
+            <div class="servicio-item">
+                <img src="imagenes.jpg/afeitado-clasico.png" alt="Afeitado clasico">
+                 <h3>Afeitado clasico</h3>
+                    <p>Un afeitado perfecto, para um dia impecable</p>
+            </div>
+            <div class="servicio-item">
+                <img src="imagenes.jpg/manicura-profesiona.png" alt="Manicura profesional">
+                <h3>Manicura profesional</h3>
+                <p>Manos siempre perfectas</p>
+            </div>
+            <div class="servicio-item">
+                <img src="imagenes.jpg/pedicura-profesional.png" alt="Pedicura profesional">
+                <h3>Pedicura profesional</h3>
+                <p>Porque el estilo no se detiene en los zapatos</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de Galeria-->
+    <section id="galeria">
+        <h2>Galeria de Estilos</h2>
+        <p>Explora nuestros cortes y estilos mas populares</p>
+        <div class="galeria-imagenes">
+            <img src="galeria.jpg/imagen1.png" alt="Corte moderno"/>
+            <img src="galeria.jpg/imagen2.png" alt="Afeitado clasico"/>
+            <img src="galeria.jpg/imagen3.png" alt="Trabajo del barbero"/>
+        </div>
+    </section>
+
+    <!--Seccion reservas-->
+    <section id="reservas">
+        <h2>Reserva tu Cita</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="servcio">Servicio Deseado</label>
+            <select id="servicio" name="servicio">
+                <option value="corte">Corte de cabello</option>
+                <option value="afeitado">Afeitado Clasico</option>
+                <option value="manicura">Manicura profesional</option>
+                <option value="pedicura">Pedicura profesional</option>
+            </select>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <!--Seccion de Contacto-->
+    <section class="contacto" id="contacto">
+        <h2>Contactanos</h2>
+        <p>¿Tienes preguntas o quieres mas informacion? ¡Dejanos un mensaje!</p>
+        <form action="enviar-mensaje" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electronico" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer>
+        <div class="footer-content">
+            <h3>Barberia Capel's</h3>
+            <p>Tu estilo nuestro Compromiso</p>
+            <div class="redes-sociales">
+                <ul>
+                    <li><a href="#">Facebook</a></li></li>
+                    <li></li><a href="#">Instagram</a></li>
+                    <li></li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <p>Direccion: kr 83a #54-26</p>
+            <p>Telefono: (601) 456-7890</p>
+            <p>&copy; 2024 Barberia Capel's. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
